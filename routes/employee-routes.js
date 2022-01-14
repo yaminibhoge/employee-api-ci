@@ -3,6 +3,13 @@ const {EmployeeService } = require('../helpers/employee-helper-v3');
 
 var router = Router();
 var empServ = new EmployeeService();
+
+router.get("/",async(req, res)=>{
+    
+        res.status(200).json({"data" : "Sample Data from Demo"});
+    
+})
+
 //Get all employee
 // GET /employees
 router.get("/",async(req, res)=>{
