@@ -4,7 +4,7 @@ const {EmployeeService } = require('../helpers/employee-helper-v3');
 var router = Router();
 var empServ = new EmployeeService();
 
-router.get("/",async(req, res)=>{
+router.get("/demo",async(req, res)=>{
     
         res.status(200).json({"data" : "Sample Data from Demo"});
     
